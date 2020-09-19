@@ -1,21 +1,25 @@
 //https://www.eclipse.org/paho/clients/js/
 
 function Encender1() {
+	console.log("Envio LUZ 1 ENCENDIDA")
 	message = new Paho.MQTT.Message("Luz1ENCENDIDA");
     message.destinationName = "mdpilatuna.fie@unach.edu.ec/dispositivo";
     client.send(message);
 }
 function Apagar1() {
+	console.log("Envio LUZ 1 APAGADA")
 	message = new Paho.MQTT.Message("Luz1APAGADA");
     message.destinationName = "mdpilatuna.fie@unach.edu.ec/dispositivo";
     client.send(message);
 }
 function Encender2() {
+	console.log("Envio LUZ 2 ENCENDIDA")
 	message = new Paho.MQTT.Message("Luz2ENCENDIDA");
     message.destinationName = "mdpilatuna.fie@unach.edu.ec/dispositivo";
     client.send(message);
 }
 function Apagar2() {
+	console.log("Envio LUZ 2 APAGADA")
 	message = new Paho.MQTT.Message("Luz2APAGADA");
     message.destinationName = "mdpilatuna.fie@unach.edu.ec/dispositivo";
     client.send(message);
