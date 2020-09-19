@@ -75,4 +75,5 @@ function Apagar2() {
 	 }
      else if (text=="Luz2"){
 	  document.getElementById("estado2").innerHTML = texto;
-	 }
+  }
+  }
